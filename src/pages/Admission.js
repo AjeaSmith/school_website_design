@@ -24,43 +24,60 @@ const Admission = () => {
     ],
     links: [
       {
+        id: 1,
         school: "Ann Arbor Public Schools",
         link: "https://www.a2schools.org/"
       },
       {
+        id: 2,
         school: "Chelsea Public Schools",
         link:
           "https://www.chelsea.k12.mi.us/education/district/district.php?sectionid=1"
       },
       {
+        id: 3,
         school: "Dexter Community Schools",
         link: "https://www.dexterschools.org/"
       },
       {
+        id: 4,
         school: "Lincoln Consolidated Schools",
         link: "https://www.lincolnk12.org/"
       },
       {
+        id: 5,
         school: "Manchester Community Schools",
         link:
           "http://www.mcs.k12.mi.us/education/district/district.php?sectionid=1"
       },
       {
+        id: 6,
         school: "Manchester Community Schools",
         link:
           "http://www.mcs.k12.mi.us/education/district/district.php?sectionid=1"
       },
       {
+        id: 7,
         school: "Milan Public Schools",
         link: "https://www.milanareaschools.org/"
       },
-      { school: "Saline Area Schools", link: "https://www.salineschools.org/" },
       {
+        id: 8,
+        school: "Saline Area Schools",
+        link: "https://www.salineschools.org/"
+      },
+      {
+        id: 9,
         school: "Washtenaw Intermediate School District",
         link: "https://washtenawisd.org/"
       },
-      { school: "Whitmore Lake Public Schools", link: "https://www.wlps.net/" },
       {
+        id: 10,
+        school: "Whitmore Lake Public Schools",
+        link: "https://www.wlps.net/"
+      },
+      {
+        id: 11,
         school: "Ypsilanti Community Schools ",
         link: "https://www.ycschools.us/"
       }
@@ -82,29 +99,28 @@ const Admission = () => {
             <div className="admission_right">
               {state.enroll.map(info => {
                 return (
-                  <React.Fragment>
+                  <div key={info.id}>
                     <h5>{info.title}</h5>
                     <p>{info.content}</p>
-                  </React.Fragment>
+                  </div>
                 );
               })}
             </div>
+            <div className="divider hide-on-med-and-up"></div>
             <div className="admission_left">
-              <React.Fragment>
-                <h6>
-                  Washtenaw Alliance for Virtual Education <br></br>is made possible by
-                  the following partnerships:
-                </h6>
-                {state.links.map(link => {
-                  return (
-                    <div>
-                      <p>
-                        <a href={link.link}>{link.school}</a>
-                      </p>
-                    </div>
-                  );
-                })}
-              </React.Fragment>
+              <h6>
+                Washtenaw Alliance for Virtual Education <br />
+                is made possible by the following partnerships:
+              </h6>
+              {state.links.map(link => {
+                return (
+                  <div key={link.id}>
+                    <p>
+                      <a href={link.link}>{link.school}</a>
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

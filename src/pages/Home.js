@@ -12,35 +12,29 @@ class Home extends Component {
         id: 1,
         img: girl1,
         caption: "WELCOME",
-        slogan: (
-          <h5>
-            301 West Michigan Avenue Suite 201 <br />
-            Ypsilanti, MI 48197 Phone: 734-761-7027 Fax: 734-483-1464
-          </h5>
-        )
+        slogan:
+          "301 West Michigan Avenue Suite 201 Ypsilanti, MI 48197 Phone: 734-761-7027 Fax: 734-483-1464"
       },
       {
         id: 2,
         img: boy2,
         caption: "Enroll now! It's free",
         slogan: (
-          <h5>
-            <Link to="/Admission" className="blue-text text-accent-4">
-              Application Link
-            </Link>
-          </h5>
+          <Link to="/Admission" className="blue-text text-accent-4">
+            Application Link
+          </Link>
         )
       },
       {
         id: 3,
         img: boy3,
         caption: (
-          <h4>
+          <div>
             Meet our{" "}
             <Link to="/Curriculum" className="blue-text text-accent-4">
               staff
             </Link>
-          </h4>
+          </div>
         ),
         slogan: "Friendly. Supportive. Dedicated."
       }

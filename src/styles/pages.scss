@@ -1,15 +1,15 @@
 //ADMISSION
 .admission_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   .admission_section {
-    // height: 500px;
     width: 100%;
     h3 {
       font-family: "Roboto", "sans-serif";
+    }
+    .admission_title h3 {
+      font-size: 2.3em;
+    }
+    .admission_title h6 {
+      padding: 0 1em;
     }
   }
   .application_section {
@@ -21,10 +21,22 @@
     font-size: 1em;
     padding: 2em 2em;
     display: flex;
+    // flex-direction: column;
     justify-content: space-evenly;
     .admission_right {
+      margin-bottom: 1em;
       margin-right: 2em;
       max-width: 550px;
+    }
+    .admission_left {
+      margin-top: 1em;
+    }
+    .admission_left p {
+      line-height: 1.7em;
+    }
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      text-align: center;
     }
   }
 }
