@@ -106,7 +106,7 @@ const Admission = () => {
                 );
               })}
             </div>
-            <div className="divider hide-on-med-and-up"></div>
+            <div className="divider hide-on-med-and-up" />
             <div className="admission_left">
               <h6>
                 Washtenaw Alliance for Virtual Education <br />
@@ -124,8 +124,38 @@ const Admission = () => {
             </div>
           </div>
         </section>
-        <section className="application_section row">
-          <h3 className="center-align">Application</h3>
+        <section className="application_section row blue-grey lighten-4">
+          <div className="application_question">
+            <div className="question_box">
+              <h3>APPLICATION / INTEREST FORM</h3>
+              <p>
+                Please complete each field below with your student's
+                information. Click Submit at the bottom of the form when
+                complete. Office staff will call to discuss your interest in 5-7
+                business days. Admissions are on a rolling basis dependent upon
+                the number of seats available in the program for each
+                participating district.
+              </p>
+              <a
+                href="mailto:ylennon@weocflex.org"
+                className="btn grey black-text lighten-2"
+              >
+                Email for questions
+              </a>
+            </div>
+          </div>
+          <div className="application_form">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdpQiGJDTqMwEqZ14SSbMgH7YJDnRk_zSaqvJ8jgfi46U1sKg/viewform?embedded=true"
+              width="640"
+              height="1000"
+              frameBorder="0"
+              marginHeight="0"
+              marginWidth="0"
+            >
+              Loading...
+            </iframe>
+          </div>
         </section>
       </section>
     </React.Fragment>

@@ -31,6 +31,9 @@
 .nav_menu {
   box-shadow: none;
   background: rgba(54, 128, 193, 0.801);
+  .active {
+    background: #3681c1;
+  }
   @media only screen and (max-width: 598px) {
     li a {
       font-size: 0.8em;

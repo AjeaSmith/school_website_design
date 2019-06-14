@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../styles/App.scss";
 import M from "materialize-css";
 const Menu = () => {
@@ -23,16 +23,16 @@ const Menu = () => {
               <Link to="/">HOME</Link>
             </li>
             <li>
-              <Link to="/Admission">ADMISSION</Link>
+              <NavLink to="/Admission">ADMISSION</NavLink>
             </li>
             <li>
-              <Link to="/Calendar">CALENDAR</Link>
+              <NavLink to="/Calendar">CALENDAR</NavLink>
             </li>
             <li>
-              <Link to="/Curriculum">CURRICULUM</Link>
+              <NavLink to="/Curriculum">CURRICULUM</NavLink>
             </li>
             <li>
-              <Link to="/Student">STUDENT</Link>
+              <NavLink to="/Student">STUDENT</NavLink>
             </li>
             <li className="dropdown-trigger" data-target="dropdown1">
               <Link to="/">
