@@ -1,0 +1,79 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  .header {
+    height: 64px;
+    @media only screen and (max-width: 600px) {
+      height: 56px;
+    }
+  }
+  .router {
+    height: 55px;
+  }
+}
+// NAV
+.nav_header {
+  background: #3681c1;
+  font-size: 2.5em;
+  .nav_wrapper .brand_logo {
+    font-family: "Great Vibes", cursive;
+    margin-left: 1em;
+  }
+  @media only screen and (max-width: 598px) {
+    font-size: 1.8em;
+    .login{
+      font-size: 0.6em;
+    }
+  }
+}
+// MENU
+.nav_menu {
+  box-shadow: none;
+  background: rgba(54, 128, 193, 0.801);
+  @media only screen and (max-width: 598px) {
+    li a {
+      font-size: 0.8em;
+    }
+  }
+  @media only screen and (max-width: 537px) {
+    li a {
+      font-size: 0.7em;
+    }
+  }
+}
+// SLIDER
+.slider {
+  background: rgba(54, 128, 193, 0.801);
+  .indicators {
+    bottom: 5px;
+  }
+  .caption {
+    background: rgba(73, 158, 210, 0.644);
+    padding: 10px;
+  }
+  .slides li .caption {
+    width: 50%;
+    left: 40%;
+  }
+}
+// WELCOME
+.welcome {
+  height: 350px;
+  margin: 0 1em;
+
+  .welcome_header {
+    font-family: "Great Vibes", cursive;
+  }
+  .welcome_text p {
+    line-height: 1.8em;
+    padding: 0 2.5em;
+    font-family: Roboto, sans-serif;
+  }
+  @media only screen and (max-width: 494px) {
+    font-size: 0.8em;
+
+    .welcome_header h2 {
+      font-size: 3em;
+    }
+  }
+}
