@@ -21,7 +21,7 @@
   }
   @media only screen and (max-width: 598px) {
     font-size: 1.8em;
-    .login{
+    .login {
       font-size: 0.6em;
     }
   }
@@ -43,17 +43,20 @@
 }
 // SLIDER
 .slider {
-  background: rgba(54, 128, 193, 0.801);
+  background: rgba(54, 128, 193, 0.849);
   .indicators {
     bottom: 5px;
   }
   .caption {
-    background: rgba(73, 158, 210, 0.644);
+    background: rgba(73, 158, 210, 0.856);
     padding: 10px;
   }
   .slides li .caption {
     width: 50%;
     left: 40%;
+  }
+  .slogan .link_color{
+    color: #3681c1;
   }
 }
 // WELCOME

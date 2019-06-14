@@ -24,9 +24,11 @@ class Home extends Component {
         img: boy2,
         caption: "Enroll now! It's free",
         slogan: (
-          <Link to="/Admission" className="white-text">
-            Application
-          </Link>
+          <h5>
+            <Link to="/Admission" className="blue-text text-accent-4">
+              Application Link
+            </Link>
+          </h5>
         )
       },
       {
@@ -34,8 +36,10 @@ class Home extends Component {
         img: boy3,
         caption: (
           <h4>
-           MEET OUR <br />
-            <Link to="/admission" className="">STAFF</Link>
+            Meet our{" "}
+            <Link to="/admission" className="blue-text text-accent-4">
+              staff
+            </Link>
           </h4>
         ),
         slogan: "Friendly. Supportive. Dedicated."
