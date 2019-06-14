@@ -1,0 +1,30 @@
+//ADMISSION
+.admission_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .admission_section {
+    // height: 500px;
+    width: 100%;
+    h3 {
+      font-family: "Roboto", "sans-serif";
+    }
+  }
+  .application_section {
+    height: 300px;
+    width: 100%;
+    background: blue;
+  }
+  .admission_content {
+    font-size: 1em;
+    padding: 2em 2em;
+    display: flex;
+    justify-content: space-evenly;
+    .admission_right {
+      margin-right: 2em;
+      max-width: 550px;
+    }
+  }
+}

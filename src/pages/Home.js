@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext, Component } from "react";
+import React, { Component } from "react";
 import M from "materialize-css";
 import boy2 from "../images/boy2.jpg";
 import boy3 from "../images/boy3.jpg";
@@ -37,7 +37,7 @@ class Home extends Component {
         caption: (
           <h4>
             Meet our{" "}
-            <Link to="/admission" className="blue-text text-accent-4">
+            <Link to="/Curriculum" className="blue-text text-accent-4">
               staff
             </Link>
           </h4>
@@ -59,7 +59,7 @@ class Home extends Component {
             {slides.map(slide => {
               return (
                 <li key={slide.id}>
-                  <img src={slide.img} />
+                  <img src={slide.img} alt="students" />
                   <div className="caption center-align">
                     <h3>{slide.caption}</h3>
                     <h5 className="light grey-text text-lighten-3">
