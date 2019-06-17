@@ -144,8 +144,15 @@ const Admission = () => {
               </a>
             </div>
           </div>
+          <div className="question_button">
+            <a href="mailto:ylennon@weocflex.org" className="btn btn-small">
+              Email for questions
+            </a>
+          </div>
           <div className="application_form">
             <iframe
+              className="form"
+              title="Wave Refferal"
               src="https://docs.google.com/forms/d/e/1FAIpQLSdpQiGJDTqMwEqZ14SSbMgH7YJDnRk_zSaqvJ8jgfi46U1sKg/viewform?embedded=true"
               width="640"
               height="1000"

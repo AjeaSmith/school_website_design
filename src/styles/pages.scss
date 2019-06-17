@@ -39,6 +39,7 @@
   display: flex;
   height: 500px;
   width: 100%;
+  padding: 0 0.7em;
   justify-content: space-evenly;
   align-items: center;
   .application_question {
@@ -56,5 +57,17 @@
   }
   .application_form {
     height: 370px;
+  }
+  .question_button a {
+    display: none;
+  }
+  @media only screen and (max-width: 1000px) {
+    .application_question {
+      display: none;
+    }
+    flex-direction: column;
+    .question_button a {
+      display: block;
+    }
   }
 }
