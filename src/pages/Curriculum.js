@@ -9,13 +9,13 @@ const Curriculum = () => {
       <section className="curriculum_section">
         <div className="images">
           <div className="image image1">
-            <img src={image1} alt="student1" width="200"/>
+            <img src={image1} alt="student1" width="200" />
           </div>
           <div className="image image2">
-            <img src={image2} alt="student1" width="200"/>
+            <img src={image2} alt="student1" width="200" />
           </div>
           <div className="image image3">
-            <img src={image3} alt="student3" width="200"/>
+            <img src={image3} alt="student3" width="200" />
           </div>
         </div>
         <div className="curriculum_info">

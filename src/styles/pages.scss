@@ -113,19 +113,48 @@
   }
 }
 .curriculum_section {
-  padding: 0 1em;
+  // padding: 0 1em;
   display: flex;
-  // flex-direction: column;
-  align-items: center;
+  // align-items: center;
   justify-content: space-evenly;
+
+  h3 {
+    font-family: "Great Vibes", "cursive";
+  }
   .curriculum_info {
-    // max-width: 1000px;
-    margin-top: 1.5em;
+    padding: 0 1.5em;
+    padding-top: 1.5em;
   }
   .images {
+    height: 200px;
+    background: #eceff1;
     margin-top: 2em;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
+  }
+  @media only screen and (max-width: 974px) {
+    flex-direction: column;
+    .images {
+      justify-content: space-evenly;
+      width: 100%;
+      flex-direction: row;
+      .image img {
+        width: 170px;
+      }
+    }
+  }
+  @media only screen and (max-width: 569px) {
+    flex-direction: column-reverse;
+    .images {
+      padding: 1.2em 0;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      .image img {
+        width: 450px;
+      }
+    }
   }
 }
