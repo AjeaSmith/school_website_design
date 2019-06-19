@@ -112,3 +112,20 @@
     }
   }
 }
+.curriculum_section {
+  padding: 0 1em;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  .curriculum_info {
+    // max-width: 1000px;
+    margin-top: 1.5em;
+  }
+  .images {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
