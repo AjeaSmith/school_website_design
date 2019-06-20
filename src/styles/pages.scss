@@ -178,4 +178,17 @@
       background: #3781c1;
     }
   }
+  .advisors {
+    .button {
+      background: #3781c1;
+    }
+  }
+  .resources {
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    @media only screen and (max-width: 710px) {
+      flex-direction: column;
+    }
+  }
 }
