@@ -112,6 +112,8 @@
     }
   }
 }
+
+// CURRICULUM
 .curriculum_section {
   // padding: 0 1em;
   display: flex;
@@ -155,6 +157,25 @@
       .image img {
         width: 450px;
       }
+    }
+  }
+}
+
+// COUNSELING
+.divider {
+  margin-top: 7em;
+}
+.counseling {
+  height: 100vh;
+  h3 {
+    font-family: "Great Vibes", "cursive";
+  }
+  .requests {
+    .service_info {
+      max-width: 500px;
+    }
+    .button {
+      background: #3781c1;
     }
   }
 }

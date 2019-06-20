@@ -75,6 +75,8 @@ const Curriculum = () => {
           </div>
         </div>
       </section>
+      <div className="divider" />
+      <section className="counseling" />
     </React.Fragment>
   );
 };

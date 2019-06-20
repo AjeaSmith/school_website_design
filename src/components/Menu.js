@@ -4,11 +4,21 @@ import "../styles/App.scss";
 import M from "materialize-css";
 const Menu = () => {
   useEffect(() => {
+    // MORE dropdown
     const Dropdown = document.querySelectorAll(".dropdown-trigger");
-    M.Dropdown.init(Dropdown, {});
+    M.Dropdown.init(Dropdown, { coverTrigger: false, hover: true });
+
+    // COUNSELING dropdown
+    const Dropdown2 = document.querySelectorAll(".dropdown-trigger2");
+    M.Dropdown.init(Dropdown2, { coverTrigger: false, hover: true });
   });
   return (
     <React.Fragment>
+      <ul id="dropdown2" className="dropdown-content">
+        <li>
+          <Link to="/Counseling">COUNSELING</Link>
+        </li>
+      </ul>
       <ul id="dropdown1" className="dropdown-content">
         <li>
           <a href="https://www.weoc.info/">
@@ -28,8 +38,11 @@ const Menu = () => {
             <li>
               <NavLink to="/Calendar">CALENDAR</NavLink>
             </li>
-            <li>
-              <NavLink to="/Curriculum">CURRICULUM</NavLink>
+            <li className="dropdown-trigger2" data-target="dropdown2">
+              <NavLink to="/Curriculum">
+                CURRICULUM
+                <i className="material-icons right">arrow_drop_down</i>
+              </NavLink>
             </li>
             <li>
               <NavLink to="/Student">STUDENT</NavLink>
