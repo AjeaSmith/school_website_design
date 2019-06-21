@@ -31,7 +31,7 @@ class Home extends Component {
         caption: (
           <div>
             Meet our{" "}
-            <Link to="/Curriculum" className="blue-text text-accent-4">
+            <Link to="/Counseling" className="blue-text text-accent-4">
               staff
             </Link>
           </div>
