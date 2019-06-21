@@ -6,7 +6,7 @@ import "../styles/pages.scss";
 const Curriculum = () => {
   return (
     <React.Fragment>
-      <h3 className="center-align">Curriculum</h3>
+      <h3 className="center-align" style={{fontFamily: 'Great Vibes'}}>Curriculum</h3>
       <section className="curriculum_section">
         <div className="images">
           <div className="image image1">
