@@ -76,7 +76,6 @@ const Curriculum = () => {
         </div>
       </section>
       <div className="divider" />
-      <section className="counseling" />
     </React.Fragment>
   );
 };
